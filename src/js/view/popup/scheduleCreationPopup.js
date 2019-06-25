@@ -262,10 +262,15 @@ ScheduleCreationPopup.prototype._onClickSaveSchedule = function(target) {
         return true;
     }
 
-    isPrivate = !domutil.hasClass(domutil.get(cssPrefix + 'schedule-private'), config.classname('public'));
-    location = domutil.get(cssPrefix + 'schedule-location');
-    state = domutil.get(cssPrefix + 'schedule-state');
-    isAllDay = !!domutil.get(cssPrefix + 'schedule-allday').checked;
+    // isPrivate = !domutil.hasClass(domutil.get(cssPrefix + 'schedule-private'), config.classname('public'));
+    // location = domutil.get(cssPrefix + 'schedule-location');
+    // state = domutil.get(cssPrefix + 'schedule-state');
+    // isAllDay = !!domutil.get(cssPrefix + 'schedule-allday').checked;
+
+    isPrivate = false;
+    location = 'location';
+    state = 'state';
+    isAllDay = false;
 
     if (isAllDay) {
         startDate.setHours(0, 0, 0);
