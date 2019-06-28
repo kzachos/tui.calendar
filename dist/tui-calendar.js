@@ -19828,7 +19828,7 @@ ScheduleCreationPopup.prototype._createDatepicker = function(start, end, isAllDa
 
     this.rangePicker = DatePicker.createRangePicker({
         startpicker: {
-            date: new TZDate(start).getTime(),
+            date: new TZDate(start).toDate(),
             input: '#' + cssPrefix + 'schedule-start-date',
             container: '#' + cssPrefix + 'startpicker-container'
         },
@@ -19837,7 +19837,7 @@ ScheduleCreationPopup.prototype._createDatepicker = function(start, end, isAllDa
             input: '#' + cssPrefix + 'schedule-end-date',
             container: '#' + cssPrefix + 'endpicker-container'
         },
-        format: isAllDay ? 'yyyy-MM-dd' : 'yyyy-MM-dd HH:mm',
+        format: isAllDay ? 'yyyy-MM-dd' : 'HH:mm',
         timepicker: isAllDay ? null : {
             showMeridiem: false
         },
