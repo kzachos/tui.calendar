@@ -1,6 +1,6 @@
 /*!
  * TOAST UI Calendar
- * @version 1.12.0 | Tue Jun 25 2019
+ * @version 1.12.0 | Fri Jun 28 2019
  * @author NHN FE Development Lab <dl_javascript@nhn.com>
  * @license MIT
  */
@@ -19828,7 +19828,7 @@ ScheduleCreationPopup.prototype._createDatepicker = function(start, end, isAllDa
 
     this.rangePicker = DatePicker.createRangePicker({
         startpicker: {
-            date: new TZDate(start).toDate(),
+            date: new TZDate(start).getTime(),
             input: '#' + cssPrefix + 'schedule-start-date',
             container: '#' + cssPrefix + 'startpicker-container'
         },
@@ -21449,7 +21449,7 @@ module.exports = (Handlebars['default'] || Handlebars).template({"1":function(co
     + alias4(((helper = (helper = helpers.CSS_PREFIX || (depth0 != null ? depth0.CSS_PREFIX : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"CSS_PREFIX","hash":{},"data":data}) : helper)))
     + "icon "
     + alias4(((helper = (helper = helpers.CSS_PREFIX || (depth0 != null ? depth0.CSS_PREFIX : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"CSS_PREFIX","hash":{},"data":data}) : helper)))
-    + "ic-date\"></span>\n                <input id=\""
+    + "ic-date\"></spa\n                <input id=\""
     + alias4(((helper = (helper = helpers.CSS_PREFIX || (depth0 != null ? depth0.CSS_PREFIX : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"CSS_PREFIX","hash":{},"data":data}) : helper)))
     + "schedule-start-date\" class=\""
     + alias4(((helper = (helper = helpers.CSS_PREFIX || (depth0 != null ? depth0.CSS_PREFIX : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"CSS_PREFIX","hash":{},"data":data}) : helper)))

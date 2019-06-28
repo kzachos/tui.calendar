@@ -565,7 +565,7 @@ ScheduleCreationPopup.prototype._createDatepicker = function(start, end, isAllDa
 
     this.rangePicker = DatePicker.createRangePicker({
         startpicker: {
-            date: new TZDate(start).toDate(),
+            date: new TZDate(start).getTime(),
             input: '#' + cssPrefix + 'schedule-start-date',
             container: '#' + cssPrefix + 'startpicker-container'
         },
