@@ -1,6 +1,6 @@
 /*!
  * TOAST UI Calendar
- * @version 1.12.0 | Fri Jun 28 2019
+ * @version 1.12.0 | Mon Jul 01 2019
  * @author NHN FE Development Lab <dl_javascript@nhn.com>
  * @license MIT
  */
@@ -19515,11 +19515,11 @@ ScheduleCreationPopup.prototype._onClickSaveSchedule = function(target) {
     startDate = new TZDate(this.rangePicker.getStartDate()).toLocalTime();
     endDate = new TZDate(this.rangePicker.getEndDate()).toLocalTime();
 
-    if (!title.value) {
-        title.focus();
-
-        return true;
-    }
+    // if (!title.value) {
+    //     title.focus();
+    //
+    //     return true;
+    // }
 
     if (!startDate && !endDate) {
         return true;
