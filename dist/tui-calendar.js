@@ -1,6 +1,6 @@
 /*!
  * TOAST UI Calendar
- * @version 1.12.0 | Mon Jul 01 2019
+ * @version 1.12.0 | Fri Jul 26 2019
  * @author NHN FE Development Lab <dl_javascript@nhn.com>
  * @license MIT
  */
@@ -23877,7 +23877,7 @@ function TimeGrid(name, options, panelElement) {
         viewName: name,
         renderStartDate: '',
         renderEndDate: '',
-        hourStart: 0,
+        hourStart: 8,
         hourEnd: 24,
         timezones: options.timezones,
         isReadOnly: options.isReadOnly,

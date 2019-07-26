@@ -138,7 +138,7 @@ function TimeGrid(name, options, panelElement) {
         viewName: name,
         renderStartDate: '',
         renderEndDate: '',
-        hourStart: 0,
+        hourStart: 8,
         hourEnd: 24,
         timezones: options.timezones,
         isReadOnly: options.isReadOnly,
