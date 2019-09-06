@@ -502,7 +502,6 @@ TimeGrid.prototype.refreshHourmarker = function() {
             return true;
         });
 
-        needsRender = false;
         if (needsRender) {
             this.render(viewModel);
         } else {
