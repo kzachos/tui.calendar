@@ -1,6 +1,6 @@
 /*!
  * TOAST UI Calendar
- * @version 1.12.0 | Fri Jul 26 2019
+ * @version 1.12.0 | Fri Sep 06 2019
  * @author NHN FE Development Lab <dl_javascript@nhn.com>
  * @license MIT
  */
@@ -24197,8 +24197,8 @@ TimeGrid.prototype.render = function(viewModel) {
     this.hourmarkers = domutil.find(config.classname('.timegrid-hourmarker'), container, true);
 
     if (!this._scrolled) {
-        this._scrolled = true;
-        this.scrollToNow();
+        // this._scrolled = true;
+        // this.scrollToNow();
     }
 };
 
@@ -24241,6 +24241,7 @@ TimeGrid.prototype.refreshHourmarker = function() {
             return true;
         });
 
+        needsRender = false;
         if (needsRender) {
             this.render(viewModel);
         } else {
